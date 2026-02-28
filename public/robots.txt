@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Block development & sensitive folders
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /admin/
+Disallow: /private/
+
+# Block source maps & build artifacts
+Disallow: /*.map$
+
+# Allow important sections explicitly
+Allow: /blog/
+Allow: /partners/
+Allow: /atm-franchise-in-india/
+
+# Sitemap
+Sitemap: https://atmfranchisehub.com/sitemap.xml

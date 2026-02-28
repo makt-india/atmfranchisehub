@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* --- Custom Marquee Animation --- */
+@layer utilities {
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    display: flex;
+    width: max-content; /* Critical: Forces all items to stay in one long line */
+    animation: marquee 40s linear infinite; /* Adjusted speed to 40s for readability */
+  }
+
+  /* UX Improvement: Pause the animation when the user hovers over it */
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
+}
