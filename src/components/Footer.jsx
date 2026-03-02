@@ -163,14 +163,6 @@ const Footer = () => {
               © {new Date().getFullYear()} ATMFranchiseHub.com — All Rights Reserved.
             </p>
 
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link to="/privacy-policy" className="hover:text-red-600 transition">
-                Privacy Policy
-              </Link>
-              <Link to="/terms" className="hover:text-red-600 transition">
-                Terms & Conditions
-              </Link>
-            </div>
           </div>
         </div>
       </div>
