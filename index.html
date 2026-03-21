@@ -13,29 +13,34 @@
   <!-- Google Verification -->
   <meta name="google-site-verification" content="AnOL3Hwp3awlMTE-F3VrOA3gguiMK1E5LdIVEG0tcPds" />
 
-  <!-- Performance -->
+  <!-- Performance / Core Web Vitals Optimizations -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="/common/hero-1.webp" as="image" fetchpriority="high" />
 
-  <!-- Default Title (temporary fallback only) -->
+  <!-- Default Title (temporary fallback only, Edge Worker overrides) -->
   <title>ATM Franchise Hub</title>
 
-  <!-- ================= GOOGLE ANALYTICS 4 ================= -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NX89JENSW1"></script>
+  <!-- ================= GOOGLE ANALYTICS 4 (Deferred for TBT) ================= -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-NX89JENSW1"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-NX89JENSW1');
+    window.addEventListener('load', function() {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NX89JENSW1');
+    });
   </script>
 
-  <!-- ================= MICROSOFT CLARITY ================= -->
+  <!-- ================= MICROSOFT CLARITY (Deferred for TBT) ================= -->
   <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r); t.async=1; t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "veme5u4g1l");
+    window.addEventListener('load', function() {
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r); t.async=1; t.defer=1; t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "veme5u4g1l");
+    });
   </script>
 
   <!-- GLOBAL STRUCTURED DATA -->
