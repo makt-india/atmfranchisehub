@@ -201,7 +201,7 @@ const handleSubmit = async (e) => {
     formDataToSend.append("source", "atmfranchisehub");
     formDataToSend.append("wa_status", "Pending");
 
-    const response = await fetch(" https://script.google.com/macros/s/AKfycbzMwI2gQAKJSHTSHKSi78wimhCvYfbMpOMcICWMw5cEetQWFnYT7vXqu5H-JPsegUy3/exec", {
+    const response = await fetch(" https://script.google.com/macros/s/AKfycbyGKwiYDPjY-1wPOwMRcCgZ2osv8cvj9mdhodVpeY_L2ZTDJO--L2E5VMrxdQVDz20D/exec", {
       method: "POST",
       body: formDataToSend,
     });
