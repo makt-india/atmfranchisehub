@@ -54,7 +54,7 @@ eps: {
     sectionSubtitle: "RBI-authorized White Label ATM deployment partner across India.",
     title: "About EPS (Electronic Payment & Services)",
     description:
-      "Electronic Payment & Services (EPS) is an RBI-authorised White Label ATM (WLA) operator in India. Under the WLA framework, EPS deploys and manages ATMs independently of traditional banks while complying with regulatory guidelines issued by the Reserve Bank of India. EPS oversees infrastructure deployment, centralized monitoring, transaction processing coordination, and cash management systems across semi-urban and rural markets. Through structured facilitation, ATMFraanchiseHub assists eligible applicants in connecting with EPS for potential ATM franchise deployment opportunities.",
+      "Electronic Payment & Services (EPS) is an RBI-authorised White Label ATM (WLA) operator in India. Under the WLA framework, EPS deploys and manages ATMs independently of traditional banks while complying with regulatory guidelines issued by the Reserve Bank of India. EPS oversees infrastructure deployment, centralized monitoring, transaction processing coordination, and cash management systems across semi-urban and rural markets. Through structured facilitation, ATMFranchiseHub assists eligible applicants in connecting with EPS for potential ATM franchise deployment opportunities.",
     stats: [
       { value: "11,000+", label: "ATMs Deployed (Operator Data)" },
       { value: "Pan-India", label: "Operational Presence" },
@@ -72,7 +72,7 @@ eps: {
   seoContent: {
     title: "How the EPS White Label ATM Franchise Works",
     text:
-      "An EPS ATM franchise operates under the RBI-regulated White Label ATM (WLA) model. Under this framework, EPS is responsible for ATM hardware deployment, software integration, network monitoring, and operational coordination. ATMFraanchiseHub functions as a facilitation and coordination partner—guiding applicants through documentation, site evaluation, and onboarding processes. Revenue is generated through transaction-based commissions, subject to operator policies, location footfall, and performance metrics. This structure allows eligible entrepreneurs and commercial property owners to participate in India’s ATM infrastructure growth without managing day-to-day banking operations."
+      "An EPS ATM franchise operates under the RBI-regulated White Label ATM (WLA) model. Under this framework, EPS is responsible for ATM hardware deployment, software integration, network monitoring, and operational coordination. ATMFranchiseHub functions as a facilitation and coordination partner—guiding applicants through documentation, site evaluation, and onboarding processes. Revenue is generated through transaction-based commissions, subject to operator policies, location footfall, and performance metrics. This structure allows eligible entrepreneurs and commercial property owners to participate in India’s ATM infrastructure growth without managing day-to-day banking operations."
   },
 
   benefits: [
@@ -154,7 +154,7 @@ eps: {
     sectionSubtitle: "Technology-driven White Label ATM infrastructure in India.",
     title: "About Hitachi Payment Services",
     description:
-      "Hitachi Payment Services is a major payment solutions provider in India, operating ATM networks, cash management systems, and digital transaction infrastructure. Under the White Label ATM (WLA) regulatory framework governed by the Reserve Bank of India (RBI), Hitachi deploys and manages ATMs across urban, semi-urban, and commercial zones. Through structured facilitation, ATMFraanchiseHub assists eligible applicants in exploring potential deployment opportunities under the Hitachi WLA model.",
+      "Hitachi Payment Services is a major payment solutions provider in India, operating ATM networks, cash management systems, and digital transaction infrastructure. Under the White Label ATM (WLA) regulatory framework governed by the Reserve Bank of India (RBI), Hitachi deploys and manages ATMs across urban, semi-urban, and commercial zones. Through structured facilitation, ATMFranchiseHub assists eligible applicants in exploring potential deployment opportunities under the Hitachi WLA model.",
     stats: [
       { value: "65,000+", label: "ATMs & CDMs (Operator Network Data)" },
       { value: "2 Million+", label: "POS Terminals" },
@@ -172,7 +172,7 @@ eps: {
   seoContent: {
     title: "Understanding the Hitachi White Label ATM (WLA) Model",
     text:
-      "Under the RBI’s White Label ATM (WLA) guidelines, operators such as Hitachi are authorized to deploy and manage ATM networks independently of traditional banks. The franchise structure involves location eligibility, documentation verification, and operator approval. ATMFraanchiseHub supports applicants in coordinating site assessment, documentation flow, and onboarding processes. Revenue participation is transaction-based and depends on site performance, transaction volume, and operator-defined commission structures."
+      "Under the RBI’s White Label ATM (WLA) guidelines, operators such as Hitachi are authorized to deploy and manage ATM networks independently of traditional banks. The franchise structure involves location eligibility, documentation verification, and operator approval. ATMFranchiseHub supports applicants in coordinating site assessment, documentation flow, and onboarding processes. Revenue participation is transaction-based and depends on site performance, transaction volume, and operator-defined commission structures."
   },
 
   benefits: [
@@ -237,14 +237,13 @@ eps: {
 ,
   india1: {
   heroTitle: "India1 ATM Franchise – White Label ATM Model for Rural & Semi-Urban India",
-  heroImage: "/common/hero-4.webp",
-
+heroImage: "/common/hero-1.webp",
   aboutContent: {
     sectionTitle: "About India1 ATM",
     sectionSubtitle: "White Label ATM deployment focused on semi-urban and rural markets.",
     title: "About India1 (Formerly BTI Payments)",
     description:
-      "India1 is a Reserve Bank of India (RBI) authorized White Label ATM (WLA) operator with a strategic focus on semi-urban and rural (SURU) markets. The operator specializes in deploying ATMs in areas where banking infrastructure is limited but cash demand remains consistent. By expanding access to cash withdrawal points in underserved regions, India1 supports financial inclusion while operating within the RBI-regulated WLA framework. ATMFraanchiseHub assists eligible applicants in exploring deployment opportunities under the India1 model.",
+      "India1 is a Reserve Bank of India (RBI) authorized White Label ATM (WLA) operator with a strategic focus on semi-urban and rural (SURU) markets. The operator specializes in deploying ATMs in areas where banking infrastructure is limited but cash demand remains consistent. By expanding access to cash withdrawal points in underserved regions, India1 supports financial inclusion while operating within the RBI-regulated WLA framework. ATMFranchiseHub assists eligible applicants in exploring deployment opportunities under the India1 model.",
     stats: [
       { value: "10,000+", label: "WLAs Deployed (Operator Data)" },
       { value: "SURU Focus", label: "Semi-Urban & Rural Expansion" },
@@ -262,7 +261,7 @@ eps: {
   seoContent: {
     title: "Understanding the India1 SURU White Label ATM Model",
     text:
-      "Under the RBI’s White Label ATM (WLA) guidelines, operators like India1 deploy ATMs independently of traditional bank branches. Their SURU (Semi-Urban & Rural) focus targets locations with limited ATM penetration but steady cash usage patterns. ATMFraanchiseHub supports applicants with site evaluation, documentation coordination, and onboarding assistance. Revenue participation is based on transaction commissions and depends on location suitability, footfall, and operator-defined policies."
+      "Under the RBI’s White Label ATM (WLA) guidelines, operators like India1 deploy ATMs independently of traditional bank branches. Their SURU (Semi-Urban & Rural) focus targets locations with limited ATM penetration but steady cash usage patterns. ATMFranchiseHub supports applicants with site evaluation, documentation coordination, and onboarding assistance. Revenue participation is based on transaction commissions and depends on location suitability, footfall, and operator-defined policies."
   },
 
   benefits: [
@@ -334,7 +333,7 @@ findi: {
     sectionSubtitle: "Technology-led White Label ATM deployment framework.",
     title: "About Findi – Digital-Integrated WLA Operator",
     description:
-      "Findi operates within India’s RBI-regulated White Label ATM (WLA) framework with a technology-oriented deployment approach. The operator focuses on integrating traditional cash access infrastructure with modern digital payment ecosystems, including QR-based and cardless transaction capabilities where supported. Through structured facilitation, ATMFraanchiseHub assists eligible applicants in exploring deployment opportunities aligned with Findi’s operator policies.",
+      "Findi operates within India’s RBI-regulated White Label ATM (WLA) framework with a technology-oriented deployment approach. The operator focuses on integrating traditional cash access infrastructure with modern digital payment ecosystems, including QR-based and cardless transaction capabilities where supported. Through structured facilitation, ATMFranchiseHub assists eligible applicants in exploring deployment opportunities aligned with Findi’s operator policies.",
     stats: [
       { value: "20,000+", label: "ATMs Managed (Operator Data)" },
       { value: "Digital-Enabled", label: "QR / UPI Capable Infrastructure" },
@@ -352,7 +351,7 @@ findi: {
   seoContent: {
     title: "Understanding the Findi Digital WLA Structure",
     text:
-      "Under RBI White Label ATM guidelines, operators such as Findi deploy and manage ATM infrastructure independent of bank branch ownership. Findi’s approach incorporates digital transaction interfaces alongside standard withdrawal services, subject to network compatibility and regulatory guidelines. ATMFraanchiseHub supports documentation coordination, site evaluation, and onboarding facilitation. Revenue participation depends on transaction volume, site category, and operator-defined commission structure."
+      "Under RBI White Label ATM guidelines, operators such as Findi deploy and manage ATM infrastructure independent of bank branch ownership. Findi’s approach incorporates digital transaction interfaces alongside standard withdrawal services, subject to network compatibility and regulatory guidelines. ATMFranchiseHub supports documentation coordination, site evaluation, and onboarding facilitation. Revenue participation depends on transaction volume, site category, and operator-defined commission structure."
   },
 
   benefits: [

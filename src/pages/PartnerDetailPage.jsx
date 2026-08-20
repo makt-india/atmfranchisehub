@@ -31,9 +31,10 @@ const PartnerDetailPage = () => {
   return (
     <>
       <Seo
-        title={`${details.heroTitle} | ATM Franchise Hub`}
-        description={details.aboutContent.description.substring(0, 155) + "..."}
-      />
+  title={details.heroTitle}
+  description={details.aboutContent.description.substring(0, 155) + "..."}
+  url={`/partners/${partnerSlug}`}
+/>
 
       <motion.main
         className="min-h-screen bg-slate-50"
@@ -45,13 +46,14 @@ const PartnerDetailPage = () => {
         {/* --- HERO SECTION --- */}
         <section className="relative h-[60vh] bg-slate-900 text-white overflow-hidden">
           <div className="absolute inset-0">
-            <img 
-              src={details.heroImage || "/common/franchise.webp"}
-              alt={`${details.heroTitle} Background`}
-              className="w-full h-full object-cover opacity-50" 
-              loading="eager"
-            />
-          </div>
+<img
+  src={details.heroImage || "/common/franchise.webp"}
+  alt={`${details.heroTitle} Background`}
+  className="w-full h-full object-cover opacity-50"
+  loading="eager"
+  fetchPriority="high"
+/>        
+  </div>
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
           
           <div className="container mx-auto px-4 h-full flex flex-col justify-center relative z-10">

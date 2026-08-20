@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   DollarSign, Users, Lightbulb, ArrowRight, Clipboard, MapPin,
@@ -69,6 +69,7 @@ const HomePage = () => {
     alt="ATM Franchise in India Business Opportunity"
     className="absolute inset-0 w-full h-full object-cover opacity-60"
     loading="eager"
+    fetchPriority="high"
   />
 
   {/* Gradient Overlay */}
@@ -233,16 +234,17 @@ const HomePage = () => {
             />
           </div>
 
-          <h3 className="text-xl font-bold text-slate-900 mb-2">{partner.name}</h3>
-          
-          <button 
-            onClick={() => navigate(`/partners/${partner.page}`)}
+          <h3 className="text-xl font-bold text-slate-900 mb-2">{partner.name}   
+          </h3>
+          <Link
+             to={`/partners/${partner.page}`}
             className="mt-auto inline-flex items-center gap-2 text-sm font-bold text-red-600 group-hover:text-red-700 transition-colors"
           >
             View Models 
-            <span className="group-hover:translate-x-1 transition-transform duration-300">&rarr;</span>
-          </button>
-        </motion.div>
+            <span className="group-hover:translate-x-1 transition-transform duration-300">&rarr;
+            </span>
+           </Link>       
+           </motion.div>
       ))}
     </div>
   </div>

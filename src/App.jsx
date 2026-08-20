@@ -39,7 +39,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "ATM Franchise Hub",
   url: "https://atmfranchisehub.com",
-  logo: "https://atmfranchisehub.com/logo.png",
+  logo: "https://atmfranchisehub.com/common/logo.png",
 };
 
 const websiteSchema = {

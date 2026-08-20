@@ -5,13 +5,20 @@ export async function onRequest(context) {
   const url = new URL(context.request.url);
   const path = url.pathname;
   const baseUrl = "https://atmfranchisehub.com";
+  const escapeHtml = (value) =>
+    String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/"/g, "&quot;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
 
   // Default SEO fallbacks
   let seoData = {
     title: "ATM Franchise in India 2026 – Cost, Profit, Commission & Apply Online",
     description: "Complete guide to ATM franchise in India. Check ATM franchise cost, monthly profit, commission per transaction, RBI white label ATM operators, investment model and apply online.",
-    image: `${baseUrl}/og-image.jpg`,
+    image: `${baseUrl}/common/hero-1.webp`,
     url: `${baseUrl}${path}`,
+    type: "website",
   };
 
   // Static Map
@@ -50,6 +57,7 @@ export async function onRequest(context) {
       if (post) {
         seoData.title = `${post.title} | ATM Franchise Hub`;
         seoData.description = post.summary || `Read our latest update on ATM franchise business in India. Topic: ${post.title}.`;
+        seoData.type = "article";
       } else {
         // Fallback for unknown blog route
         const titleCaseSlug = slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
@@ -85,22 +93,23 @@ export async function onRequest(context) {
         element.setInnerContent(seoData.title);
       }
       if (element.tagName === "head") {
-        element.append(`<meta name="description" content="${seoData.description}">`, { html: true });
-        element.append(`<link rel="canonical" href="${seoData.url}">`, { html: true });
+        element.append(`<meta name="description" content="${escapeHtml(seoData.description)}">`, { html: true });
+        element.append(`<meta name="robots" content="index, follow">`, { html: true });
+        element.append(`<link rel="canonical" href="${escapeHtml(seoData.url)}">`, { html: true });
 
         // OpenGraph / Social Meta
-        element.append(`<meta property="og:title" content="${seoData.title}">`, { html: true });
-        element.append(`<meta property="og:description" content="${seoData.description}">`, { html: true });
-        element.append(`<meta property="og:url" content="${seoData.url}">`, { html: true });
-        element.append(`<meta property="og:image" content="${seoData.image}">`, { html: true });
-        element.append(`<meta property="og:type" content="website">`, { html: true });
+        element.append(`<meta property="og:title" content="${escapeHtml(seoData.title)}">`, { html: true });
+        element.append(`<meta property="og:description" content="${escapeHtml(seoData.description)}">`, { html: true });
+        element.append(`<meta property="og:url" content="${escapeHtml(seoData.url)}">`, { html: true });
+        element.append(`<meta property="og:image" content="${escapeHtml(seoData.image)}">`, { html: true });
+        element.append(`<meta property="og:type" content="${seoData.type}">`, { html: true });
         element.append(`<meta property="og:site_name" content="ATM Franchise Hub">`, { html: true });
         
         // Twitter Card
         element.append(`<meta name="twitter:card" content="summary_large_image">`, { html: true });
-        element.append(`<meta name="twitter:title" content="${seoData.title}">`, { html: true });
-        element.append(`<meta name="twitter:description" content="${seoData.description}">`, { html: true });
-        element.append(`<meta name="twitter:image" content="${seoData.image}">`, { html: true });
+        element.append(`<meta name="twitter:title" content="${escapeHtml(seoData.title)}">`, { html: true });
+        element.append(`<meta name="twitter:description" content="${escapeHtml(seoData.description)}">`, { html: true });
+        element.append(`<meta name="twitter:image" content="${escapeHtml(seoData.image)}">`, { html: true });
       }
     }
   }

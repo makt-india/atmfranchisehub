@@ -30,26 +30,31 @@ const FranchisePage = () => {
 
   const steps = [
     {
+      stepNumber: 1,
       title: "Inquiry & Application",
       detail: "Submit your application. We review your profile and location feasibility.",
       icon: <Phone className="w-5 h-5 text-white" />
     },
     {
+      stepNumber: 2,
       title: "Site Survey & Vetting",
       detail: "Experts conduct a physical survey to check footfall and technical viability.",
       icon: <MapPin className="w-5 h-5 text-white" />
     },
     {
+      stepNumber: 3,
       title: "Agreement Signing",
       detail: "Sign the WLA Franchise Agreement and complete RBI compliance docs.",
       icon: <FileText className="w-5 h-5 text-white" />
     },
     {
+      stepNumber: 4,
       title: "Installation & Branding",
       detail: "We deploy the ATM, VSAT, and branding collateral at your shop.",
       icon: <LayoutGrid className="w-5 h-5 text-white" />
     },
     {
+      stepNumber: 5,
       title: "Go Live & Support",
       detail: "Transaction testing is done, and you start earning immediately.",
       icon: <CheckCircle className="w-5 h-5 text-white" />
@@ -64,8 +69,7 @@ const FranchisePage = () => {
   title="ATM Franchise Models in India – Cost, Profit & ROI Comparison 2026"
   description="Compare ATM franchise models in India including India1, Hitachi and EPS. Detailed cost breakdown, commission structure, monthly profit potential and white label ATM ROI analysis."
   keywords="ATM franchise models India, ATM franchise cost comparison, ATM franchise profit India, India1 ATM franchise cost, Hitachi ATM franchise investment, white label ATM ROI"
-  url="/atm-franchise-models"
-/>
+url="/atm-franchise-in-india"/>
 
       <motion.main
         className="min-h-screen bg-slate-50"

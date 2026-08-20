@@ -32,21 +32,16 @@ const Seo = ({
   const siteUrl = url ? `${baseUrl}${url}` : baseUrl;
 
   const siteImage =
-    image || `${baseUrl}/og-image.jpg`;
+    image || `${baseUrl}/common/hero-1.webp`;
 
   /* ---------- STRUCTURED DATA ---------- */
-
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": siteName,
-    "url": baseUrl,
-    "logo": `${baseUrl}/logo.png`,
-    "sameAs": [
-      "https://www.facebook.com/",
-      "https://www.linkedin.com/"
-    ]
-  };
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": siteName,
+  "url": baseUrl,
+  "logo": `${baseUrl}/common/logo.png`
+};
 
   const websiteSchema = {
     "@context": "https://schema.org",

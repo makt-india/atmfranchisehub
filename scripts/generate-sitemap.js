@@ -22,7 +22,7 @@ function extractSlugs(filePath, regexPattern) {
   try {
     const content = fs.readFileSync(filePath, 'utf-8');
     const matches = [...content.matchAll(regexPattern)];
-    return matches.map(m => m[1]);
+    return [...new Set(matches.map(m => m[1]))];
   } catch (error) {
     console.error(`Error reading ${filePath}:`, error);
     return [];
@@ -32,12 +32,12 @@ function extractSlugs(filePath, regexPattern) {
 // 1. Extract blog slugs
 const blogDataPath = path.resolve(__dirname, '../src/blog-data.js');
 // Regex looks for: slug: "some-string" or slug: 'some-string'
-const blogSlugs = extractSlugs(blogDataPath, /slug:\s*['"]([^'"]+)['"]/g);
+const blogSlugs = extractSlugs(blogDataPath, /["']?slug["']?\s*:\s*['"]([^'"]+)['"]/g);
 
 // 2. Extract partner slugs
 const appDataPath = path.resolve(__dirname, '../src/data/appData.jsx');
 // Regex looks for: page: "some-string" or page: 'some-string' in PARTNERS array
-const partnerSlugs = extractSlugs(appDataPath, /page:\s*['"]([^'"]+)['"]/g);
+const partnerSlugs = extractSlugs(appDataPath, /["']?page["']?\s*:\s*['"]([^'"]+)['"]/g);
 
 // Combine all routes
 const allRoutes = [
@@ -46,10 +46,12 @@ const allRoutes = [
   ...partnerSlugs.map(slug => ({ url: `/partners/${slug}`, priority: 0.7 }))
 ];
 
+const uniqueRoutes = [...new Map(allRoutes.map(route => [route.url, route])).values()];
+
 // Generate sitemap XML
 const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${allRoutes
+${uniqueRoutes
   .map(
     route => `  <url>
     <loc>${BASE_URL}${route.url}</loc>

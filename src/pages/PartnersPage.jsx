@@ -20,7 +20,7 @@ const PartnersPage = () => {
     title="Hitachi, India1, EPS & Findi ATM Franchise in India – Cost, Profit & Apply Online"
     description="Compare Hitachi ATM franchise cost, India1 ATM investment, EPS commission model and Findi ATM profit. Detailed white label ATM franchise guide with ROI and application process."
     keywords="Hitachi ATM franchise cost, India1 ATM franchise apply online, EPS ATM franchise commission, Findi ATM franchise profit, white label ATM franchise India"
-    url="/banking-partners"
+    url="/partners"
   />
       <motion.main
         className="min-h-screen bg-slate-50"
